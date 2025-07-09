@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Birds - Bird Identification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Inline CSS for setting background image */
+        body {
+            background: url("{{ url_for('static', filename='images/bird6.jpg') }}") no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Bird Identification</h1>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('upload_file') }}">Identify</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('help_page') }}">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Discover the Beauty of Birds</h2>
+        <p>
+            Birds are among the most fascinating and diverse creatures on Earth. With over **10,000 species**, they can be found in almost every habitat, from tropical rainforests to arid deserts.
+            They play a crucial role in nature by maintaining ecological balance, controlling insect populations, and acting as pollinators for many plants.
+            Some birds, such as eagles and hawks, are powerful predators, while others, like hummingbirds, survive on nectar and help in plant reproduction.
+            Birds communicate using a variety of calls and songs, which serve as warnings, mating signals, or ways to establish territory.
+            Migration is a remarkable phenomenon observed in birds such as Arctic Terns, which travel thousands of miles between continents.
+            Many bird species exhibit stunning plumage, with colors that serve for camouflage, attracting mates, or signaling danger.
+            Conservation efforts are crucial, as habitat destruction and climate change threaten many bird populations worldwide.
+            Birds also hold cultural significance, symbolizing freedom, wisdom, and resilience in different societies.
+            Some of the most intelligent birds, such as crows and parrots, can use tools and mimic human speech.
+            Observing birds in their natural habitat is not only enjoyable but also helps in appreciating the wonders of nature.
+        </p>
+
+        <h3>Types of Birds:</h3>
+        <ul>
+            <li><strong>Songbirds:</strong> Known for their beautiful melodies, including robins and nightingales.</li>
+            <li><strong>Birds of Prey:</strong> Raptors like eagles, falcons, and hawks that hunt for food.</li>
+            <li><strong>Water Birds:</strong> Swans, ducks, and flamingos, often found in lakes and wetlands.</li>
+            <li><strong>Flightless Birds:</strong> Penguins, ostriches, and emus, adapted for life on land or water.</li>
+            <li><strong>Exotic Birds:</strong> Parrots, macaws, and peacocks with vibrant colors and striking features.</li>
+        </ul>
+    </div>
+</body>
+</html>

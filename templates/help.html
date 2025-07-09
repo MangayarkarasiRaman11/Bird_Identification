@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Bird Identification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Inline CSS for setting background image */
+        body {
+            background: url("{{ url_for('static', filename='images/bird7.jpg') }}") no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Bird Identification</h1>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('upload_file') }}">Identify</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('help_page') }}">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Bird Identification Guide & Help</h2>
+        <p>Birdwatching and identification can be a fascinating hobby! This guide will help you understand how to identify birds effectively.</p>
+
+        <h3>🦜 How to Identify a Bird?</h3>
+        <ul>
+            <li><strong>Size & Shape:</strong> Observe the bird’s body structure, beak type, and wing shape.</li>
+            <li><strong>Color Patterns:</strong> Look at the color of feathers, markings, and variations.</li>
+            <li><strong>Beak Type:</strong> Different birds have unique beaks based on their diet.</li>
+            <li><strong>Legs & Feet:</strong> Wading birds have long legs, while birds of prey have sharp claws.</li>
+            <li><strong>Behavior & Flight:</strong> Some birds hover, while others glide or dive.</li>
+            <li><strong>Sounds & Calls:</strong> Birds have unique songs and chirps used for communication.</li>
+            <li><strong>Habitat:</strong> Knowing where a bird is commonly found can help in identification.</li>
+        </ul>
+
+        <h3>📸 Using the Bird Identification Tool</h3>
+        <p>Our AI-powered bird identification tool makes it easier to identify birds from images. Just follow these steps:</p>
+        <ul>
+            <li>Go to the <a href="{{ url_for('upload_file') }}">Identify</a> page.</li>
+            <li>Upload a clear image of a bird.</li>
+            <li>The AI model will analyze the image and provide possible matches.</li>
+            <li>Check the suggested species and learn more about them!</li>
+        </ul>
+
+        <h3>🌍 Common Bird Categories</h3>
+        <ul>
+            <li><strong>Garden Birds:</strong> Sparrows, robins, and blue jays.</li>
+            <li><strong>Water Birds:</strong> Ducks, swans, and flamingos.</li>
+            <li><strong>Birds of Prey:</strong> Eagles, hawks, and owls.</li>
+            <li><strong>Exotic Birds:</strong> Parrots, toucans, and macaws.</li>
+            <li><strong>Songbirds:</strong> Nightingales, finches, and canaries.</li>
+        </ul>
+
+        <h3>❓ Frequently Asked Questions</h3>
+
+        <h4>What if I get an incorrect prediction?</h4>
+        <p>AI models work best with high-quality images. Try uploading a clearer image with a single bird in focus.</p>
+
+        <h4>What image formats are supported?</h4>
+        <p>You can upload images in JPEG, PNG, or BMP format.</p>
+
+        <h4>Can I use this tool for all bird species?</h4>
+        <p>Our AI is trained on a diverse dataset, but it may not recognize every bird in the world. If unsure, cross-check with other sources.</p>
+
+        <h3>🌱 Want to Learn More?</h3>
+        <p>Bird identification is a fun and rewarding experience. Keep exploring nature, listening to birdsongs, and enjoying the beauty of avian life!</p>
+    </div>
+</body>
+</html>
