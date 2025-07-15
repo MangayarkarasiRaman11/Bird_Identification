@@ -4,3 +4,4 @@ Bird Identification App is a react native(expo cli) application for identificati
 We have used Keras, a deep learning framework built on top of TensorFlow 2.0, for building,training and testing our deep learning model.
 Frontend is built using react native and firebase for authentication.
 
+![System Architecture](images/home.png)
